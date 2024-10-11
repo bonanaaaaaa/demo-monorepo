@@ -1,0 +1,24 @@
+{
+  "name": "example-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "pnpm run lint",
+    "dev": "nx next:dev",
+    "build": "nx next:build",
+    "start": "nx next:start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "next": "14.2.14",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint-config-next": "14.2.15",
+    "typescript": "^5"
+  }
+}
