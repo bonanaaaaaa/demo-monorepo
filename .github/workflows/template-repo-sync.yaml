@@ -12,3 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: bonanaaaaaa/demo-git/modules/ci/template-repo-sync@main
+        with:
+          github_token: ${{ secrets.TEMPLATE_REPO_SYNC_PAT }}
