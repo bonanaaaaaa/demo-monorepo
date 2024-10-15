@@ -1,0 +1,14 @@
+name: Template Repo Sync
+
+on:
+  schedule:
+    - cron: "0 1 * * MON"
+  # Allow this workflow to be manually triggered
+  workflow_dispatch:
+
+jobs:
+  template-repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: bonanaaaaaa/demo-git/modules/ci/template-repo-sync@main
